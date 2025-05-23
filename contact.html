@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>فرم تماس با ما</title>
+    <link href="https://cdn.fontcdn.ir/Font/Vazir/Vazir.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="contact-body">
+<div class="loader-container text-center">
+    <img src="image/loade.png" alt="" class="pizza-run">
+  </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="image/logo.png" alt="لوگوی مارگاریتا" height="45">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <div class="navbar-nav me-auto">
+                    <a class="nav-link" href="index.html">صفحه اصلی</a>
+                    <a class="nav-link" href="menu.html">منو</a>
+                    <a class="nav-link" href="about.html">درباره ما</a>
+                    <a class="nav-link" href="contact.html">تماس با ما</a>
+                    <a class="nav-link" href="blogs.html">بلاگ ما</a>
+                </div>
+                <a href="login.html" class="btn btn-warning ms-lg-3 mt-2 mt-lg-0">ورود</a>
+                <a href="Signup.html" class="btn btn-warning ms-lg-3 mt-2 mt-lg-0">ثبت نام</a>
+            </div>
+        </div>
+    </nav>
+
+<div class="container mt-5 pt-5">
+    <div class="row">
+        <div class="col-lg-6 mb-4">
+            <div class="registration-wrapper">
+                <form action="success.html" method="post" class="registration-form shadow p-4 rounded">
+
+                    <div class="form-group">
+                        <input type="text" class="form-control form-input" id="username" placeholder="نام کاربری" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="password" class="form-control form-input" id="password" placeholder="رمز عبور" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control form-input" id="address" placeholder="آدرس" required>
+                    </div>
+
+                    <div class="form-group">
+                        <input type="text" class="form-control form-input" id="phone-number" placeholder="شماره تماس" required>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-block submit-btn">ثبت اطلاعات</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- نقشه -->
+             <div class="col-lg-6">
+                <div class="map-wrapper">
+                    <iframe title="map-iframe" src="https://neshan.org/maps/iframe/places/b81d673593288026405becc6a26d68dc#c34.566-50.814-18z-0p/34.56618921701859/50.81350342890779" 
+                        width="600" height="450" allowFullScreen loading="lazy" >
+                     </iframe>
+             </div>
+             </div>
+        </div>
+    </div>
+
+    <br>
+    <footer>
+        <iframe id="footer-frame" src="foter.html" width="100%" height="200" style="border: none;" scrolling="no"></iframe>
+    </footer>
+    </div>
+    <script>
+      window.addEventListener('message', (event) => {
+        const iframe = document.getElementById('footer-frame');
+        if (iframe && !isNaN(event.data)) {
+          iframe.style.height = event.data + 'px';
+        }
+      });
+    </script>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <button onclick="scrollToTop()" id="scrollTopBtn"
+  class="btn btn-warning position-fixed bottom-0 end-0 d-none"
+  style="width: 40px; height: 40px; margin: 20px; border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+  <i class="fas fa-arrow-up text-white"></i>
+</button>
+<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1055">
+  <div id="successToast" class="toast bg-success text-white border-0" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="d-flex">
+      <div class="toast-body">
+        اطلاعات شما با موفقیت ثبت شد
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="بستن"></button>
+    </div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/scriptcontact.js"></script>
+</body>
+
+</html>
